@@ -9,7 +9,7 @@ namespace LineComparison
     public class Line
     {
 
-        public void CheckEqualityOfTwoLines()
+        public void Comparelength()
         {
             Console.WriteLine("Enter the value of x1 :");
             double x1 = Convert.ToDouble(Console.ReadLine());

@@ -8,7 +8,7 @@ namespace LineComparison
         {
             Console.WriteLine("Welcome to Line Comparison Computation program");
             Line compare = new Line();
-            compare.CompareTwoLines();
+            compare.Comparelength();
         }
     }
 }
