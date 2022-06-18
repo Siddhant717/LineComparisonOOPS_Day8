@@ -7,8 +7,8 @@ namespace LineComparison
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Line Comparison Computation program");
-            Line equality = new Line();
-            equality.CheckEqualityOfTwoLines();
+            Line compare = new Line();
+            compare.CompareTwoLines();
         }
     }
 }

@@ -36,21 +36,25 @@ namespace LineComparison
             double y = (y2 - y1) * (y2 - y1);
             double z = x + y;
             double length1 = Math.Sqrt(z);
-            Console.WriteLine("Length of the line1 is " + length1);
+            Console.WriteLine("Length of the line1 is" + length1);
 
             double a = (x4 - x3) * (x4 - x3);
             double b = (y4 - y3) * (y4 - y3);
             double c = a + b;
             double length2 = Math.Sqrt(c);
-            Console.WriteLine("Length of the line2 is " + length2);
+            Console.WriteLine("Length of the line2 is" + length2);
 
-            if (length1 == length2)
+            if (length1.CompareTo(length2) == 0)
             {
-                Console.WriteLine("Both the line1 and line2 are equal");
+                Console.WriteLine("Both the line1 and line 2 are equal");
+            }
+            else if (length1.CompareTo(length2) > 0)
+            {
+                Console.WriteLine("Line1 is greater than line2");
             }
             else
             {
-                Console.WriteLine("Both the line1 and line2 are not equal");
+                Console.WriteLine("Line1 is smaller than line2");
             }
         }
     }
